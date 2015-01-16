@@ -12,6 +12,9 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 ### 1. [Movielens Dataset](http://www.grouplens.org/node/73) ###
 
+* `ap_rating.dat`: rating matrix
+* `ap_user.dat`: user documents
+* `ap_movie.dat`: movie documents
 
 
 
@@ -19,7 +22,7 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 2.1. data:
 
-* `ap_rating.dat`: rating matrix which is normalized to [0,5] from `ap_rating.count`
+* `ap_rating.dat`: rating matrix which is normalized to [0,5] from ap_rating.count
 * `ap_author.dat`: author documents
 * `ap_pub.dat`: publication documents
 * 
