@@ -17,30 +17,30 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 ### 2. author-publication dataset ###
 
-1.1. data:
+2.1. data:
 
-* ap_rating_normalized.dat: rating matrix which is normalized to [0,5] from ap_rating,dat
-* ap_author.dat: author documents
-* ap_pub.dat: publication documents
+* `ap_rating.dat`: rating matrix which is normalized to [0,5] from `ap_rating.count`
+* `ap_author.dat`: author documents
+* `ap_pub.dat`: publication documents
 * 
-* dic
-* pub.list
-* author.list
+* dic: dictionary of all the documents
+* pub.list: publication list
+* author.list: author list
 
 
-1.2 code:
+2.2 code:
 
 ### 3. Data format ###
 
-* The rating record is represented as a triplet.
+* Each rating record in `ap_rating.dat`  is represented as a triplet.
 
      [u_id] [v_id] [rating]
 
-* The user document is represented as a sparse vector of word counts. 
+* Each user document in `ap_author.dat` or `ap_user.dat` is represented as a sparse vector of word counts. 
 
      [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
 
-* The item document is represented as a sparse vector of word counts. 
+* Each item document in `ap_pub.dat` or `ap_movie.dat`  is represented as a sparse vector of word counts. 
 
      [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
 
@@ -55,17 +55,7 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 ----
 
-This code requires the GSL library.
-
-Any questions or comments about this code should be sent to the topic
-models mailing list, which is a forum for discussing topic models in
-general.  To join, go to http://lists.cs.princeton.edu and click on
-"topic-models."  DO NOT EMAIL EITHER OF THE AUTHORS WITH QUESTIONS
-ABOUT THIS CODE.  ALL QUESTIONS WILL BE ANSWERED ON THE MAILING LIST.
-
-------------------------------------------------------------------------
-
-TABLE OF CONTENTS
+# TABLE OF CONTENTS #
 
 A. COMPILING
 
