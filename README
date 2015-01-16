@@ -14,15 +14,15 @@ CoTM-C is free software modified from CTM-C
 
 # data preparation #
 
-## user-movie dataset ##
+### user-movie dataset ###
 
 
 
 
-## author-publication dataset ##
+### author-publication dataset ###
 
 * data:
-    * ap_rating,dat: rating matrix which is normalized from ap_count,dat
+    * ap_rating_normalized.dat: rating matrix which is normalized to [0,5] from ap_rating,dat
     * ap_author.dat: author documents
     * ap_pub.dat: publication documents
     *  
@@ -35,6 +35,9 @@ CoTM-C is free software modified from CTM-C
 
 
 * code:
+
+
+
 
 
 
