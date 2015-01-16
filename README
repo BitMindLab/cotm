@@ -8,14 +8,14 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 ----
 
-# data preparation #
+# Data Preparation #
 
-### 1. user-movie dataset ###
-
-
+### 1. [Movielens Dataset](http://www.grouplens.org/node/73) ###
 
 
-### 2. author-publication dataset ###
+
+
+### 2. [Citation-network Dataset](http://arnetminer.org/citation) ###
 
 2.1. data:
 
@@ -29,6 +29,17 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 
 2.2 code:
+
+* load_doc.m
+* load_vocab.m
+* load_author_pub_list.m
+
+
+
+* save
+* count2rating.m
+* id2word.m
+
 
 ### 3. Data format ###
 
