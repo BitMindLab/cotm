@@ -1,6 +1,5 @@
----------------------------
-Coupled Topic Model in C
----------------------------
+# Coupled Topic Model in C #
+
 
 Song Xu
 s2jackson[at]hotmail.com
@@ -9,22 +8,35 @@ s2jackson[at]hotmail.com
 
 This file is part of CTM-C.
 
-CoTM-C is free software modified from CTM-C under
-the terms of the GNU General Public License as published by the Free
-Software Foundation; either version 2 of the License, or (at your
-option) any later version.
-
-CTM-C is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
-for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
-USA
+CoTM-C is free software modified from CTM-C 
 
 ----
+
+# data preparation #
+
+## user-movie dataset ##
+
+
+
+
+## author-publication dataset ##
+
+* data:
+    * ap_rating,dat: rating matrix which is normalized from ap_count,dat
+    * ap_author.dat: author documents
+    * ap_pub.dat: publication documents
+    *  
+    * dic
+    * pub.list
+    * author.list
+
+
+
+
+
+* code:
+
+
 
 This is a C-implementation of the correlated topic model (CTM) from
 Blei and Lafferty (2007).  This code requires the GSL library.
