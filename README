@@ -1,48 +1,61 @@
 # Coupled Topic Model in C #
 
-
-Song Xu
-s2jackson[at]hotmail.com
+` s2jackson[at]hotmail.com `
 
 (C) Copyright 2014, Song Xu
 
-This file is part of CTM-C.
-
-CoTM-C is free software modified from CTM-C 
+CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/ctm-c/) 
 
 ----
 
 # data preparation #
 
-### user-movie dataset ###
+### 1. user-movie dataset ###
 
 
 
 
-### author-publication dataset ###
+### 2. author-publication dataset ###
 
-* data:
-    * ap_rating_normalized.dat: rating matrix which is normalized to [0,5] from ap_rating,dat
-    * ap_author.dat: author documents
-    * ap_pub.dat: publication documents
-    *  
-    * dic
-    * pub.list
-    * author.list
+1.1. data:
 
-
-
+* ap_rating_normalized.dat: rating matrix which is normalized to [0,5] from ap_rating,dat
+* ap_author.dat: author documents
+* ap_pub.dat: publication documents
+* 
+* dic
+* pub.list
+* author.list
 
 
-* code:
+1.2 code:
+
+### 3. Data format ###
+
+* The rating record is represented as a triplet.
+
+     [u_id] [v_id] [rating]
+
+* The user document is represented as a sparse vector of word counts. 
+
+     [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
+
+* The item document is represented as a sparse vector of word counts. 
+
+     [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
+
+[M] is the number of unique terms in the document
+
+[term_i] is an integer associated with the i-th term in the
+  vocabulary.
+
+[count_i] is how many times the i-th term appeared in the document.
 
 
 
+----
 
-
-
-This is a C-implementation of the correlated topic model (CTM) from
-Blei and Lafferty (2007).  This code requires the GSL library.
+This code requires the GSL library.
 
 Any questions or comments about this code should be sent to the topic
 models mailing list, which is a forum for discussing topic models in
@@ -77,29 +90,7 @@ point to the BLAS library on your machine.
 
 ------------------------------------------------------------------------
 
-B. Data format
 
-Under the CTM, the words of each document are assumed exchangeable.
-Thus, each document is succinctly represented as a sparse vector of
-word counts. 
-* The rating file is a file where each line is of the form:
-
-     u_id v_id rating
-
-* The user document is represented as a sparse vector of word counts. 
-
-     [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
-
-* The item document is represented as a sparse vector of word counts. 
-
-     [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
-
-[M] is the number of unique terms in the document
-
-[term_i] is an integer associated with the i-th term in the
-  vocabulary.
-
-[count_i] is how many times the i-th term appeared in the document.
 
 ------------------------------------------------------------------------
 
