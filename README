@@ -33,13 +33,14 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 * load_doc.m
 * load_vocab.m
 * load_author_pub_list.m
-
-
-
+* 
 * save
 * count2rating.m
 * id2word.m
 
+
+
+ 教训：代码不够规范，文件及变量命名不够一目了然，导致重读性比较差。(重读还不如让我重写呢，看到吐)
 
 ### 3. Data format ###
 
