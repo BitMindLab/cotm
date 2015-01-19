@@ -12,10 +12,13 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 ### 1. [Movielens Dataset](http://www.grouplens.org/node/73) ###
 
+1.1. data:
+
 * `ap_rating.dat`: rating matrix
 * `ap_user.dat`: user documents
 * `ap_movie.dat`: movie documents
 
+1.2 code:
 
 
 ### 2. [Citation-network Dataset](http://arnetminer.org/citation) ###
@@ -33,13 +36,14 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 
 2.2 code:
 
-* load_doc.m
-* load_vocab.m
-* load_author_pub_list.m
-* 
+* load
+    * load_doc.m
+    * load_vocab.m
+    * load_author_pub_list.m
 * save
-* count2rating.m
-* id2word.m
+    * count2rating.m
+    * id2word.m
+    * to_libfm_format.m
 
 
 
