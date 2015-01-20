@@ -7,39 +7,6 @@
 CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/ctm-c/) 
 
 ----
-<table>
-    <tr>
-        <td>Fooss</td>
-    </tr>
-</table>
-
-http://images.google.com
-
-http://images.google.com/images?num=30&amp;q=larry+bird
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-code:
-
-    "dsfd"<a href="http://www.cs.princeton.edu/~blei/ctm-c/">CTM-C</a> 
-    http://images.google.com/images?num=30&amp;q=larry+bird
-
-h2. Textile
-
-* is a _shorthand syntax_ used to generate valid HTML,
-* is *easy* to read and *easy* to **write**,
-* can generate complex pages,
-* including headers, quotes, lists, tables, and *figures*.
-
-p{font-size:0.8em}. *TxStyle* is a documentation project of Textile for "Textpattern CMS":http://textpattern.com.
-
-
 
 # Data Preparation #
 
