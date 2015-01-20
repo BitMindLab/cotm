@@ -9,13 +9,21 @@ CoTM-C is free software modified from [CTM-C](http://www.cs.princeton.edu/~blei/
 ----
 <table>
     <tr>
-        <td>Foo</td>
+        <td>Fooss</td>
     </tr>
 </table>
 
 http://images.google.com
 
 http://images.google.com/images?num=30&amp;q=larry+bird
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
 
 code:
 
