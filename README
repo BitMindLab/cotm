@@ -108,7 +108,8 @@ C. Estimating a model
 
 The command to estimate a model is:
 
-./ctm est <dataset> <k> <rand/seed/model> <dir> <settings>
+./ctm est <dataset_user> <dataset_item> <dataset_rating> <# topics> <rand/seed/model> <dir> <settings>
+
 
 For example:
 
@@ -231,11 +232,11 @@ E. POSTERIOR INFERENCE ON NEW DOCUMENTS
 To perform posterior inference on a set of documents with the same
 vocabulary, run the command
 
-./ctm inf <dataset> <model-prefix> <results-prefix> <settings>
+./ctm inf <dataset_user> <dataset_item> <dataset_rating> <model-prefix> <results-prefix> <settings>
 
 For example:
 
-./ctm inf holdout.dat CTM10/final CTM10/holdout inf-settings.txt
+./ctm est ap_user.dat ap_movie.dat ap_rating_train.dat 50 rand ./  settings.txt  
 
 This will result in a number of files with prefix "results-prefix."
 They are as follows:
