@@ -113,7 +113,7 @@ The command to estimate a model is:
 
 For example:
 
-./ctm est my-training-data.dat 10 seed CTM10 settings.txt
+./ctm est ap_user.dat ap_movie.dat ap_rating_train.dat 50 rand ./  settings.txt  
 
 - <dataset> is the file described above in part B.
 
